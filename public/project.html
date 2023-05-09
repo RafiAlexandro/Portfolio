@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <title>My Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,12 +17,12 @@
     <header class="absolute px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-36 top-0 left-0 w-full flex items-center z-10">
         <nav class="py-5 px-4 sm:py-6 sm:px-6 bg-background md:px-8 lg:px-16 xl:px-24 2xl:px-36 w-full flex items-center justify-between relative">
             <div class="w-auto flex items-baseline">
-                <a href="index.html" class="font-semibold text-lg md:text-xl xl:text-2xl">Andro</a>
+                <a href="../index.html" class="font-semibold text-lg md:text-xl xl:text-2xl">Andro</a>
                 <div class="rounded-full ml-[2px] xl:ml-1 w-1 h-1 bg-primary"></div>
             </div>
             <ul class="hidden md:flex justify-center md:ml-14 menu">
                 <li class="group p-4 text-center">
-                    <a href="index.html" class="group-hover:text-primary text-sm xl:text-base link">Home</a>
+                    <a href="../index.html" class="group-hover:text-primary text-sm xl:text-base link">Home</a>
                 </li>
                 <li class="group p-4 text-center">
                     <a href="#home" class="group-hover:text-primary text-sm xl:text-base link active">Projects</a>
@@ -36,19 +37,19 @@
             <button id="hamburger" name="hamburger" type="button" class="flex flex-col justify-end md:hidden">
                 <img src="icons/hamburger.svg" alt="hamburger" class="w-6">
             </button>
-            <div id="nav-menu" class="hidden absolute left-5 right-5 p-5 bg-white shadow-lg rounded-lg top-full">
+            <div id="nav-menu" class="hidden absolute left-5 right-5 p-5 bg-background shadow-lg rounded-lg top-full">
                 <ul class="block menu">
-                    <li class="group p-4 text-center">
-                        <a href="index.html" class="group-hover:text-primary link">Home</a>
+                    <li class="group px-4 py-6 text-center">
+                        <a href="../index.html" class="group-hover:text-primary link">Home</a>
                     </li>
-                    <li class="group p-4 text-center">
+                    <li class="group px-4 py-6 text-center">
                         <a href="#home" class="group-hover:text-primary link active">Projects</a>
                     </li>
-                    <li class="group p-4 text-center">
+                    <li class="group px-4 py-6 text-center">
                         <a href="about.html" class="group-hover:text-primary link">About</a>
                     </li>
                 </ul>
-                <a href="src/login.html"><button type="button" class="btn-secondary p-4 w-full">Contact Me</button></a>
+                <a href="mailto:mrafialexandro@gmail.com"><button type="button" class="p-4 w-full text-primary border-2 border-primary rounded-md hover:bg-primary hover:text-white">Contact Me</button></a>
             </div>
         </nav>
     </header>
@@ -61,7 +62,9 @@
             <h3 class="text-lg font-bold xl:text-2xl">My Projects</h3>
             <div class="block md:flex md:mt-10 gap-x-6">
                 <div class="my-project mt-6 md:mt-0">
-                    <img src="img/Payna_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="payna">
+                    <button id="modals-1" data-modal-target="paynaModal" data-modal-toggle="paynaModal">
+                        <img src="img/Payna_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="payna">
+                    </button>
                     <h4 class="mt-4 md:mt-6 text-base font-semibold">Payna Web Design</h4>
                     <div class="flex mt-2 md:mt-3">
                         <a href="https://www.figma.com/file/iJn6EVWlAh66KGy7ffjc0c/Payna-Finance-Company-Profile?type=design&node-id=0%3A1&t=nqMWzI5mkwMVVgxd-1" target="_blank" class="flex">
@@ -75,7 +78,9 @@
                     </div>
                 </div>
                 <div class="my-project mt-6 md:mt-0">
-                    <img src="img/Homie_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="homie">
+                    <button id="modals-2" data-modal-target="homieModal" data-modal-toggle="homieModal">
+                        <img src="img/Homie_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="homie">
+                    </button>
                     <h4 class="mt-4 md:mt-6 text-base font-semibold">Homie Web Design</h4>
                     <div class="flex mt-2 md:mt-3">
                         <a href="https://www.figma.com/file/UbszE2mWE0eYXla0nXrgqI/Real-Estate?type=design&node-id=15%3A27&t=DSoeYOTPyMfE5C5W-1" target="_blank" class="flex">
@@ -89,6 +94,80 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Payna Modal Start -->
+            <div id="paynaModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 mx-4">
+                        <!-- Modal header -->
+                        <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                Payna
+                            </h3>
+                            <button id="close-1" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="paynaModal">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                Payna is a comprehensive payroll management application designed to simplify the payroll process for businesses of all sizes. This cloud-based software offers a user-friendly interface that allows business owners and HR managers to manage their employees' payrolls efficiently. Overall, Payna is a powerful and reliable payroll management application that streamlines the payroll process and helps businesses stay compliant with labor laws. I develope this website with Tailwind and Jquery.
+                            </p>
+                            <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+                                <div class="html px-auto py-5 rounded-lg border-2 border-gray-400">
+                                    <img src="icons/tailwind.svg" class="w-24 mx-auto" alt="tailwind">
+                                    <p class="text-center text-gray-400 font-medium mt-4">Tailwind</p>
+                                </div>
+                                <div class="css px-auto py-5 rounded-lg border-2 border-gray-400">
+                                    <img src="icons/jquery.svg" class="w-24 mx-auto" alt="jquery">
+                                    <p class="text-center text-gray-400 font-medium mt-4">Jquery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Payna Modal End -->
+
+            <!-- Homie Modal Start -->
+            <div id="homieModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                Homie
+                            </h3>
+                            <button id="close-2" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="homieModal">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                Homie is a property selling application that aims to simplify the process of selling a property for homeowners. The platform provides a user-friendly interface that allows homeowners to list their properties for sale and connect with potential buyers in a seamless manner. I develop this website with Bootstrap and Jquery.
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-400">Tools:</h3>
+                            <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+                                <div class="html px-auto py-5 rounded-lg border-2 border-gray-400">
+                                    <img src="icons/bootstrap.svg" class="w-24 mx-auto" alt="bootstrap">
+                                    <p class="text-center text-gray-400 font-medium mt-4">Bootstrap</p>
+                                </div>
+                                <div class="css px-auto py-5 rounded-lg border-2 border-gray-400">
+                                    <img src="icons/jquery.svg" class="w-24 mx-auto" alt="jquery">
+                                    <p class="text-center text-gray-400 font-medium mt-4">Jquery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Homie Modal End -->
+
         </section>
         <!-- Section My Project End -->
 
@@ -137,6 +216,7 @@
     <!-- Main End -->
 
     <!-- Script Start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <!-- Script End -->

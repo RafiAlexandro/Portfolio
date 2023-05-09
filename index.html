@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public/style.css">
 </head>
 <body id="home" class="[&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
     
@@ -24,17 +25,17 @@
                     <a href="#home" class="group-hover:text-primary text-sm xl:text-base link active">Home</a>
                 </li>
                 <li class="group p-4 text-center">
-                    <a href="project.html" class="group-hover:text-primary text-sm xl:text-base link">Projects</a>
+                    <a href="public/project.html" class="group-hover:text-primary text-sm xl:text-base link">Projects</a>
                 </li>
                 <li class="group p-4 text-center">
-                    <a href="about.html" class="group-hover:text-primary text-sm xl:text-base link">About</a>
+                    <a href="public/about.html" class="group-hover:text-primary text-sm xl:text-base link">About</a>
                 </li>
             </ul>
             <button type="button" class="hidden md:block btn-secondary px-4 py-2 border-2 text-primary border-primary rounded-md hover:bg-primary hover:text-white"><a href="mailto:mrafialexandro@gmail.com" class="text-sm">Contact Me</a></button>
 
             <!-- Hamburger -->
             <button id="hamburger" name="hamburger" type="button" class="flex flex-col justify-end md:hidden">
-                <img src="icons/hamburger.svg" alt="hamburger" class="w-6">
+                <img src="public/icons/hamburger.svg" alt="hamburger" class="w-6">
             </button>
             <div id="nav-menu" class="hidden absolute left-5 right-5 p-5 bg-background shadow-lg rounded-lg top-full">
                 <ul class="block menu">
@@ -42,10 +43,10 @@
                         <a href="#home" class="group-hover:text-primary link active">Home</a>
                     </li>
                     <li class="group px-4 py-6 text-center">
-                        <a href="project.html" class="group-hover:text-primary link">Projects</a>
+                        <a href="public/project.html" class="group-hover:text-primary link">Projects</a>
                     </li>
                     <li class="group px-4 py-6 text-center">
-                        <a href="about.html" class="group-hover:text-primary link">About</a>
+                        <a href="public/about.html" class="group-hover:text-primary link">About</a>
                     </li>
                 </ul>
                 <a href="mailto:mrafialexandro@gmail.com"><button type="button" class="p-4 w-full text-primary border-2 border-primary rounded-md hover:bg-primary hover:text-white">Contact Me</button></a>
@@ -69,25 +70,25 @@
                             <button class="bg-primary text-white text-sm px-4 sm:px-6 py-2 rounded-md hover:bg-background hover:border-2 hover:border-primary hover:text-primary">Hire Me</button>
                         </a>
                         <a href="https://wa.me/6282113054880" target="_blank">
-                            <img src="icons/whatsapp.svg" class="w-6" alt="whatsapp">
+                            <img src="public/icons/whatsapp.svg" class="w-6" alt="whatsapp">
                         </a>
                         <a href="https://www.instagram.com/ui.andro/" target="_blank">
-                            <img src="icons/instagram.svg" class="w-6" alt="instagram">
+                            <img src="public/icons/instagram.svg" class="w-6" alt="instagram">
                         </a>
                         <a href="https://www.linkedin.com/in/muhammad-rafi-alexandro/" target="_blank">
-                            <img src="icons/linkedin.svg" class="w-6" alt="linkedin">
+                            <img src="public/icons/linkedin.svg" class="w-6" alt="linkedin">
                         </a>
                     </div>
                 </div>
                 <div class="hidden hero-image relative lg:flex">
                     <div class="rounded-full bg-gradient-to-l from-[#B92D2C] to-[#232F6F] lg:flex lg:w-96 justify-center">
-                        <img src="img/male.png" class="p-12" alt="male">
+                        <img src="public/img/male.png" class="p-12" alt="male">
                     </div>
                     <div class="absolute bottom-12 rounded-full bg-white shadow-xl w-fit">
-                        <img src="icons/figma.svg" class="w-14 m-3" alt="figma">
+                        <img src="public/icons/figma.svg" class="w-14 m-3" alt="figma">
                     </div>
                     <div class="absolute top-0 right-10 rounded-full bg-white shadow-xl w-fit">
-                        <img src="icons/vscode.svg" class="w-10 m-4" alt="vscode">
+                        <img src="public/icons/vscode.svg" class="w-10 m-4" alt="vscode">
                     </div>
                 </div>
             </div>
@@ -99,21 +100,21 @@
             <div class="skills text-center md:flex justify-between lg:justify-evenly xl:justify-around items-center">
                 <div class="web sm:mt-4 md:mt-0">
                     <div class="rounded-full bg-yellow w-fit p-3 mx-auto">
-                        <img src="icons/website.svg" class="w-5" alt="website">
+                        <img src="public/icons/website.svg" class="w-5" alt="website">
                     </div>
                     <h3 class="text-lg font-semibold mt-3 sm:mt-5 xl:text-xl">Web Designer</h3>
                     <p class="text-sm sm:mt-2 xl:text-base">Designing a web-based software</p>
                 </div>
                 <div class="uiux mt-10 md:mt-0">
                     <div class="rounded-full bg-violet w-fit p-3 mx-auto">
-                        <img src="icons/mobile.svg" class="w-5" alt="mobile">
+                        <img src="public/icons/mobile.svg" class="w-5" alt="mobile">
                     </div>
                     <h3 class="text-lg font-semibold mt-3 sm:mt-5 xl:text-xl">UI/UX Designer</h3>
                     <p class="text-sm sm:mt-2 xl:text-base">Designing an application-based software</p>
                 </div>
                 <div class="front mt-10 md:mt-0">
                     <div class="rounded-full bg-pink w-fit p-3 mx-auto">
-                        <img src="icons/code.svg" class="w-5" alt="code">
+                        <img src="public/icons/code.svg" class="w-5" alt="code">
                     </div>
                     <h3 class="text-lg font-semibold mt-3 sm:mt-5 xl:text-xl">Front End Developer</h3>
                     <p class="text-sm sm:mt-2 xl:text-base">Implement the designing into HTML</p>
@@ -126,31 +127,109 @@
         <section class="pt-16 sm:pt-20 mx-4 px-4 sm:mx-6 sm:px-6 md:mx-8 md:px-8 lg:mx-16 lg:px-16 xl:mx-24 xl:px-24 2xl:mx-36 2xl:px-36">
             <h3 class="text-xl font-bold xl:text-2xl">Selected Projects</h3>
             <div class="projects mt-6 md:mt-8">
-                <img src="img/Payna_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="payna">
+                <button id="modals-1" data-modal-target="paynaModal" data-modal-toggle="paynaModal">
+                    <img src="public/img/Payna_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="payna">
+                </button>
                 <div class="flex mt-2 md:mt-4">
                     <a href="https://www.figma.com/file/iJn6EVWlAh66KGy7ffjc0c/Payna-Finance-Company-Profile?type=design&node-id=0%3A1&t=nqMWzI5mkwMVVgxd-1" target="_blank" class="flex">
-                        <img src="icons/view_design.svg" class="w-5" alt="view-design">
+                        <img src="public/icons/view_design.svg" class="w-5" alt="view-design">
                         <h5 class="text-sm xl:text-base">View Design</h5>
                     </a>
                     <a href="https:///rafialexandro.github.io/Payna/" target="_blank" class="flex ml-3 sm:ml-5">
-                        <img src="icons/visit_website.svg" class="w-4" alt="view-design">
+                        <img src="public/icons/visit_website.svg" class="w-4" alt="view-design">
                         <h5 class="text-sm ml-1 xl:text-base">Visit Website</h5>
                     </a>
                 </div>
             </div>
             <div class="projects mt-6 md:mt-8">
-                <img src="img/Homie_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="homie">
+                <button id="modals-2" data-modal-target="homieModal" data-modal-toggle="homieModal">
+                    <img src="public/img/Homie_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="homie">
+                </button>
                 <div class="flex mt-2 md:mt-4">
                     <a href="https://www.figma.com/file/UbszE2mWE0eYXla0nXrgqI/Real-Estate?type=design&node-id=15%3A27&t=DSoeYOTPyMfE5C5W-1" target="_blank" class="flex">
-                        <img src="icons/view_design.svg" class="w-5" alt="view-design">
+                        <img src="public/icons/view_design.svg" class="w-5" alt="view-design">
                         <h5 class="text-sm xl:text-base">View Design</h5>
                     </a>
                     <a href="https:///rafialexandro.github.io/Homie/" target="_blank" class="flex ml-3 sm:ml-5">
-                        <img src="icons/visit_website.svg" class="w-4" alt="view-design">
+                        <img src="public/icons/visit_website.svg" class="w-4" alt="view-design">
                         <h5 class="text-sm ml-1 xl:text-base">Visit Website</h5>
                     </a>
                 </div>
             </div>
+
+            <!-- Payna Modal Start -->
+            <div id="paynaModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 mx-4">
+                        <!-- Modal header -->
+                        <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                Payna
+                            </h3>
+                            <button id="close-1" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="paynaModal">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                Payna is a comprehensive payroll management application designed to simplify the payroll process for businesses of all sizes. This cloud-based software offers a user-friendly interface that allows business owners and HR managers to manage their employees' payrolls efficiently. Overall, Payna is a powerful and reliable payroll management application that streamlines the payroll process and helps businesses stay compliant with labor laws. I develope this website with Tailwind and Jquery.
+                            </p>
+                            <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+                                <div class="html px-auto py-5 rounded-lg border-2 border-gray-400">
+                                    <img src="public/icons/tailwind.svg" class="w-24 mx-auto" alt="tailwind">
+                                    <p class="text-center text-gray-400 font-medium mt-4">Tailwind</p>
+                                </div>
+                                <div class="css px-auto py-5 rounded-lg border-2 border-gray-400">
+                                    <img src="public/icons/jquery.svg" class="w-24 mx-auto" alt="jquery">
+                                    <p class="text-center text-gray-400 font-medium mt-4">Jquery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Payna Modal End -->
+
+            <!-- Homie Modal Start -->
+            <div id="homieModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                Homie
+                            </h3>
+                            <button id="close-2" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="homieModal">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                Homie is a property selling application that aims to simplify the process of selling a property for homeowners. The platform provides a user-friendly interface that allows homeowners to list their properties for sale and connect with potential buyers in a seamless manner. I develop this website with Bootstrap and Jquery.
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-400">Tools:</h3>
+                            <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+                                <div class="html px-auto py-5 rounded-lg border-2 border-gray-400">
+                                    <img src="public/icons/bootstrap.svg" class="w-24 mx-auto" alt="bootstrap">
+                                    <p class="text-center text-gray-400 font-medium mt-4">Bootstrap</p>
+                                </div>
+                                <div class="css px-auto py-5 rounded-lg border-2 border-gray-400">
+                                    <img src="public/icons/jquery.svg" class="w-24 mx-auto" alt="jquery">
+                                    <p class="text-center text-gray-400 font-medium mt-4">Jquery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Homie Modal End -->
+
         </section>
         <!-- Section Project End -->
 
@@ -183,13 +262,13 @@
                         <button class="bg-primary text-white text-xs px-4 py-2 rounded-md xl:text-sm hover:bg-background hover:border-2 hover:border-primary hover:text-primary">Contact Me</button>
                     </a>
                     <a href="https://wa.me/6282113054880" target="_blank">
-                        <img src="icons/whatsapp.svg" class="w-6" alt="whatsapp">
+                        <img src="public/icons/whatsapp.svg" class="w-6" alt="whatsapp">
                     </a>
                     <a href="https://www.instagram.com/ui.andro/" target="_blank">
-                        <img src="icons/instagram.svg" class="w-6" alt="instagram">
+                        <img src="public/icons/instagram.svg" class="w-6" alt="instagram">
                     </a>
                     <a href="https://www.linkedin.com/in/muhammad-rafi-alexandro/" target="_blank">
-                        <img src="icons/linkedin.svg" class="w-6" alt="linkedin">
+                        <img src="public/icons/linkedin.svg" class="w-6" alt="linkedin">
                     </a>
                 </div>
             </div>
@@ -203,13 +282,13 @@
                 <p class="text-sm leading-relaxed mt-2 md:mt-4 xl:text-base">For business inquiry please send email to <span class="font-medium"><a href="mailto:mrafialexandro@gmail.com">mrafialexandro@gmail.com</a></span></p>
                 <div class="flex mt-4 md:mt-6 gap-x-4">
                     <a href="https://wa.me/6282113054880" target="_blank">
-                        <img src="icons/whatsapp.svg" class="w-6" alt="whatsapp">
+                        <img src="public/icons/whatsapp.svg" class="w-6" alt="whatsapp">
                     </a>
                     <a href="https://www.instagram.com/ui.andro/" target="_blank">
-                        <img src="icons/instagram.svg" class="w-6" alt="instagram">
+                        <img src="public/icons/instagram.svg" class="w-6" alt="instagram">
                     </a>
                     <a href="https://www.linkedin.com/in/muhammad-rafi-alexandro/" target="_blank">
-                        <img src="icons/linkedin.svg" class="w-6" alt="linkedin">
+                        <img src="public/icons/linkedin.svg" class="w-6" alt="linkedin">
                     </a>
                 </div>
             </div>
@@ -220,8 +299,9 @@
     <!-- Main End -->
 
     <!-- Script Start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="public/script.js"></script>
     <!-- Script End -->
 
 </body>
