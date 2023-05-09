@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home" class="[&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
+    
+    <!-- Header Start -->
+    <header class="absolute px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-36 top-0 left-0 w-full flex items-center z-10">
+        <nav class="py-5 px-4 sm:py-6 sm:px-6 bg-background md:px-8 lg:px-16 xl:px-24 2xl:px-36 w-full flex items-center justify-between relative">
+            <div class="w-auto flex items-baseline">
+                <a href="index.html" class="font-semibold text-lg md:text-xl xl:text-2xl">Andro</a>
+                <div class="rounded-full ml-[2px] xl:ml-1 w-1 h-1 bg-primary"></div>
+            </div>
+            <ul class="hidden md:flex justify-center md:ml-14 menu">
+                <li class="group p-4 text-center">
+                    <a href="index.html" class="group-hover:text-primary text-sm xl:text-base link">Home</a>
+                </li>
+                <li class="group p-4 text-center">
+                    <a href="#home" class="group-hover:text-primary text-sm xl:text-base link active">Projects</a>
+                </li>
+                <li class="group p-4 text-center">
+                    <a href="about.html" class="group-hover:text-primary text-sm xl:text-base link">About</a>
+                </li>
+            </ul>
+            <button type="button" class="hidden md:block btn-secondary px-4 py-2 border-2 text-primary border-primary rounded-md hover:bg-primary hover:text-white"><a href="mailto:mrafialexandro@gmail.com" class="text-sm">Contact Me</a></button>
+
+            <!-- Hamburger -->
+            <button id="hamburger" name="hamburger" type="button" class="flex flex-col justify-end md:hidden">
+                <img src="icons/hamburger.svg" alt="hamburger" class="w-6">
+            </button>
+            <div id="nav-menu" class="hidden absolute left-5 right-5 p-5 bg-white shadow-lg rounded-lg top-full">
+                <ul class="block menu">
+                    <li class="group p-4 text-center">
+                        <a href="index.html" class="group-hover:text-primary link">Home</a>
+                    </li>
+                    <li class="group p-4 text-center">
+                        <a href="#home" class="group-hover:text-primary link active">Projects</a>
+                    </li>
+                    <li class="group p-4 text-center">
+                        <a href="about.html" class="group-hover:text-primary link">About</a>
+                    </li>
+                </ul>
+                <a href="src/login.html"><button type="button" class="btn-secondary p-4 w-full">Contact Me</button></a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+        <!-- Section My Project Start -->
+        <section class="pt-36 xl:pt-48 mx-4 px-4 sm:mx-6 sm:px-6 md:mx-8 md:px-8 lg:mx-16 lg:px-16 xl:mx-24 xl:px-24 2xl:mx-36 2xl:px-36">
+            <h3 class="text-lg font-bold xl:text-2xl">My Projects</h3>
+            <div class="block md:flex md:mt-10 gap-x-6">
+                <div class="my-project mt-6 md:mt-0">
+                    <img src="img/Payna_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="payna">
+                    <h4 class="mt-4 md:mt-6 text-base font-semibold">Payna Web Design</h4>
+                    <div class="flex mt-2 md:mt-3">
+                        <a href="https://www.figma.com/file/iJn6EVWlAh66KGy7ffjc0c/Payna-Finance-Company-Profile?type=design&node-id=0%3A1&t=nqMWzI5mkwMVVgxd-1" target="_blank" class="flex">
+                            <img src="icons/view_design.svg" class="w-5" alt="view-design">
+                            <h5 class="text-sm xl:text-base">View Design</h5>
+                        </a>
+                        <a href="https:///rafialexandro.github.io/Payna/" target="_blank" class="flex ml-3 sm:ml-5">
+                            <img src="icons/visit_website.svg" class="w-4" alt="view-design">
+                            <h5 class="text-sm ml-1 xl:text-base">Visit Website</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-project mt-6 md:mt-0">
+                    <img src="img/Homie_cover.png" class="rounded-lg lg:rounded-2xl border-2 border-slate-200 xl:hover:grayscale xl:hover:transition xl:hover:duration-150" alt="homie">
+                    <h4 class="mt-4 md:mt-6 text-base font-semibold">Homie Web Design</h4>
+                    <div class="flex mt-2 md:mt-3">
+                        <a href="https://www.figma.com/file/UbszE2mWE0eYXla0nXrgqI/Real-Estate?type=design&node-id=15%3A27&t=DSoeYOTPyMfE5C5W-1" target="_blank" class="flex">
+                            <img src="icons/view_design.svg" class="w-5" alt="view-design">
+                            <h5 class="text-sm xl:text-base">View Design</h5>
+                        </a>
+                        <a href="https:///rafialexandro.github.io/Homie/" target="_blank" class="flex ml-3 sm:ml-5">
+                            <img src="icons/visit_website.svg" class="w-4" alt="view-design">
+                            <h5 class="text-sm ml-1 xl:text-base">Visit Website</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section My Project End -->
+
+        <!-- Section Interest Start -->
+        <section class="pt-16 sm:pt-20 mx-4 px-4 sm:mx-6 sm:px-6 md:mx-8 md:px-8 xl:mx-24 xl:px-24 2xl:mx-36 2xl:px-36">
+            <div class="interest bg-background px-5 py-8 md:p-10 rounded-xl text-center md:flex justify-between items-center">
+                <h5 class="font-semibold xl:text-lg">Interested Working With Me?</h5>
+                <div class="interest-button flex justify-center items-center mt-4 md:mt-0 gap-x-5">
+                    <a href="mailto:mrafialexandro@gmail.com">
+                        <button class="bg-primary text-white text-xs px-4 py-2 rounded-md xl:text-sm hover:bg-background hover:border-2 hover:border-primary hover:text-primary">Contact Me</button>
+                    </a>
+                    <a href="https://wa.me/6282113054880" target="_blank">
+                        <img src="icons/whatsapp.svg" class="w-6" alt="whatsapp">
+                    </a>
+                    <a href="https://www.instagram.com/ui.andro/" target="_blank">
+                        <img src="icons/instagram.svg" class="w-6" alt="instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-rafi-alexandro/" target="_blank">
+                        <img src="icons/linkedin.svg" class="w-6" alt="linkedin">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Section Interest End -->
+
+        <!-- Footer Start -->
+        <footer class="mt-16 sm:mt-20 bg-background px-8 sm:px-12 md:px-16 xl:px-48 2xl:px-72 py-6 md:py-8">
+            <div class="footer bg-background">
+                <h4 class="font-semibold text-lg xl:text-xl">Get In Touch With Me</h4>
+                <p class="text-sm leading-relaxed mt-2 md:mt-4 xl:text-base">For business inquiry please send email to <span class="font-medium"><a href="mailto:mrafialexandro@gmail.com">mrafialexandro@gmail.com</a></span></p>
+                <div class="flex mt-4 md:mt-6 gap-x-4">
+                    <a href="https://wa.me/6282113054880" target="_blank">
+                        <img src="icons/whatsapp.svg" class="w-6" alt="whatsapp">
+                    </a>
+                    <a href="https://www.instagram.com/ui.andro/" target="_blank">
+                        <img src="icons/instagram.svg" class="w-6" alt="instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-rafi-alexandro/" target="_blank">
+                        <img src="icons/linkedin.svg" class="w-6" alt="linkedin">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Script Start -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- Script End -->
+
+</body>
+</html>
