@@ -1706,11 +1706,11 @@ input:checked + .toggle-bg {
 }
 
 .bg-contact1 {
-  background-image: url('public/img/bgcontact1.jpg');
+  background-image: url('../public/img/bgcontact1.jpg');
 }
 
 .bg-contact2 {
-  background-image: url('public/img/bgcontact2.jpg');
+  background-image: url('../public/img/bgcontact2.jpg');
 }
 
 .bg-gradient-to-b {
