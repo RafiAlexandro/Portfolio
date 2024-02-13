@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'contact1': "url('/public/img/bgcontact1.jpg')",
-        'contact2': "url('/public/img/bgcontact2.jpg')",
-        'section-header': "url('/public/img/bgheader.jpg  ')",
+        'contact1': "url('public/img/bgcontact1.jpg')",
+        'contact2': "url('public/img/bgcontact2.jpg')",
+        'section-header': "url('public/img/bgheader.jpg  ')",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
