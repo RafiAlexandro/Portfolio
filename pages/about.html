@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/style.css">
+    <title>About Me</title>
+</head>
+<body id="home" class="[&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
+    
+    <header class="absolute w-full top-0 left-0 p-4 sm:px-8 sm:py-6 md:py-8 lg:py-6 lg:px-40">
+        <nav class="relative w-full flex justify-between">
+            <div class="w-7 sm:w-8 lg:w-auto"><a href="/"><img src="../public/img/logo.png" alt="logo"></a></div>
+            <div class="flex items-center">
+                <ul class="hidden lg:flex gap-x-10 font-poppins font-medium text-black">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li class="text-orange">
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="mailto:mrafialexandro@gmail.com" target="_blank" class="text-violet">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hamburger -->
+            <button id="hamburger" name="hamburger" type="button" class="flex justify-end lg:hidden">
+                <img src="../public/img/hamburger.svg" alt="hamburger" class="w-7 sm:w-8">
+            </button>
+            <div id="nav-menu" class="hidden absolute left-5 right-5 z-50 p-5 bg-gradient-to-r from-white to-midpurple font-poppins font-medium text-black text-center sm:text-md md:text-lg shadow-lg rounded-lg top-full">
+                <ul class="block">
+                    <li class="px-4 py-6">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="px-4 py-6">
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li class="px-4 py-6 text-orange">
+                        <a href="">About</a>
+                    </li>
+                    <li class="px-4 py-6 text-violet">
+                        <a href="mailto:mrafialexandro@gmail.com" target="_blank">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="container-about" class="bg-gradient-to-b from-white via-white to-path_header">
+            <div class="px-4 pt-28 pb-20 md:px-8 lg:mx-40 lg:pt-40 lg:pb-28 text-center text-black flex flex-col items-center gap-y-4 lg:gap-y-6">
+                <h1 class="about-container-title opacity-0 font-montserrat font-bold text-2xl lg:text-3xl">About <span class="text-violet">Me</span></h1>
+                <h5 class="about-container-text opacity-0 font-poppins font-medium text-sm lg:text-lg w-11/12 lg:w-6/12 leading-relaxed">My projects are a testament to my commitment to delivering visually stunning and user-friendly website designs that effectively communicate your brand's message and drive engagement.</h5>
+            </div>
+        </section>
+
+        <section id="path"><img src="../public/img/headerpath.svg" class="w-full" alt="headerpath"></section>
+
+        <section id="aboutme">
+            <div class="about-profile opacity-0 pt-16 pb-8 px-4 md:px-8 lg:pt-12 lg:pb-16 lg:mx-40 flex flex-col md:flex-row md:justify-around md:items-center gap-y-4 md:gap-y-6 lg:gap-y-10 gap-x-12 md:gap-x-6 text-black">
+                <div class="relative md:flex">
+                    <img src="../public/img/aboutpath.svg" class="w-56 md:w-96" alt="aboutpath">
+                    <img src="../public/img/about-me.png" class="absolute bottom-[2px] lg:bottom-0 w-48 md:w-80 left-4 md:left-6 lg:left-8 z-10" alt="about-me">
+                </div>
+                <div class="flex flex-col gap-y-4 lg:gap-y-6 md:w-6/12 text-center md:text-start">
+                    <h3 class="font-montserrat font-semibold text-md lg:text-2xl">Muhammad Rafi Alexandro</h3>
+                    <p class="font-poppins text-xs lg:text-base leading-relaxed">A graduate of Information and Communication Technology (Honours) from Asia e University who is enthusiastic about creating attractive and user-centric interface designs. I have gained experience from several internships as a web designer and ui/ux designer, and will continue to develop myself in relevant fields. With skills in prioritizing user experience, using design methods from research to testing, and developing websites that support information technology. I can complete my studies and use my skills for professional work. 
+                    </p>
+                    <p class="font-poppins text-xs lg:text-base leading-relaxed">I have big ambitions for achieving my goals. I also have the ability to learn new things, so I can work in a team or individually. I always have the principle of putting user and company needs first. I also always evaluate myself to be better in the future. With the abilities I have, I am sure I can contribute well.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-contact2 bg-cover bg-no-repeat">
+            <div class="lg:relative lg:h-[308px] py-8 px-4 md:px-8 lg:mx-40 flex items-center">
+                <div class="flex flex-col lg:flex-row gap-y-4 md:gap-y-6 lg:gap-y-10">
+                    <div class="flex flex-col lg:my-auto text-center md:items-center lg:text-start text-sm gap-y-4 md:gap-y-6 lg:w-9/12">
+                        <h3 class="font-montserrat font-bold text-xl md:text-2xl text-white">Contact Me</h3>
+                        <p class="font-poppins text-grey md:text-sm md:w-9/12 leading-relaxed">For expertly crafted website designs that elevate your online presence, reach out to me today. Let's collaborate to bring your vision to life and create a captivating digital experience for your audience.</p>
+                    </div>
+                    <div class="lg:absolute -top-5 right-0 bg-path_bg bg-opacity-45 flex flex-col self-center lg:self-start w-10/12 md:w-6/12 lg:w-auto gap-y-4 lg:gap-y-6 p-4 lg:p-8  rounded-lg lg:rounded-t-2xl">
+                        <div class="flex items-center gap-x-4">
+                            <img src="../public/img/phone.svg" class="w-4 lg:w-auto" alt="phone">
+                            <h4 class="font-inter text-xs lg:text-sm text-text"><a href="https://wa.me/6282113054880" target="_blank">+62 82113054880</a></h4>
+                        </div>
+                        <div class="flex items-center gap-x-4">
+                            <img src="../public/img/mail.svg" class="w-4 lg:w-auto" alt="mail">
+                            <h4 class="font-inter text-xs lg:text-sm text-text"><a href="mailto:mrafialexandro@gmail.com" target="_blank">mrafialexandro@gmail.com</a></h4>
+                        </div>
+                        <div class="flex items-center gap-x-4">
+                            <img src="../public/img/location.svg" class="w-4 lg:w-auto" alt="location">
+                            <h4 class="font-inter text-xs lg:text-sm text-text">Bogor, West Java, Indonesia</h4>
+                        </div>
+                        <div class="flex items-center gap-x-4">
+                            <img src="../public/img/github.svg" class="w-4 lg:w-auto" alt="github">
+                            <h4 class="font-inter text-xs lg:text-sm text-text"><a href="https://github.com/RafiAlexandro" target="_blank">Rafi Alexandro</a></h4>
+                        </div>
+                        <div class="flex items-center gap-x-4">
+                            <img src="../public/img/instagram.svg" class="w-4 lg:w-auto" alt="instagram">
+                            <h4 class="font-inter text-xs lg:text-sm text-text"><a href="https://www.instagram.com/rafialexandro/" target="_blank">rafialexandro</a> | <a href="https://www.instagram.com/ui.andro/" target="_blank">ui.andro</a></h4>
+                        </div>
+                        <div class="flex items-center gap-x-4">
+                            <img src="../public/img/linkedin.svg" class="w-4 lg:w-auto" alt="linkedin">
+                            <h4 class="font-inter text-xs lg:text-sm text-text"><a href="https://www.linkedin.com/in/muhammad-rafi-alexandro/" target="_blank">Muhammad Rafi Alexandro</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <div class="bg-purple">
+            <div class="flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-0 md:flex-row justify-between py-8 px-4 md:px-8 lg:py-12 lg:mx-40">
+                <div class="text-text flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-8 md:w-3/4">
+                    <img src="../public/img/logo.png" class="w-5 md:w-6 lg:w-8" alt="logo">
+                    <p class="font-poppins text-[10px] leading-relaxed lg:leading-loose md:w-6/12 lg:w-1/2">As a passionate professional, I excel in crafting compelling UI/UX designs and seamless web experiences, backed by a meticulous approach to quality assurance to ensure the delivery of visually stunning and functionally flawless digital solutions.</p>
+                </div>
+                <div class="text-white flex flex-col gap-y-2 md:gap-y-6 lg:gap-y-8 w-1/4">
+                    <h4 class="font-poppins font-medium text-xs lg:text-sm">Pages</h4>
+                    <p class="font-inter text-[10px] lg:text-xs text-text">Home</p>
+                    <p class="font-inter text-[10px] lg:text-xs text-text">Projects</p>
+                    <p class="font-inter text-[10px] lg:text-xs text-text">About</p>
+                </div>
+                <div class="text-white flex flex-col gap-y-2 md:gap-y-6 lg:gap-y-8 md:w-1/4">
+                    <h4 class="font-poppins font-medium text-xs lg:text-sm">Contact Me</h4>
+                    <div class="flex items-center gap-x-2 lg:gap-x-4">
+                        <img src="../public/img/whatsapp-grey.svg" class="w-3 lg:w-5" alt="whatsapp-grey">
+                        <h4 class="font-inter text-[10px] text-text"><a href="https://wa.me/6282113054880" target="_blank">+62 82113054880</a></h4>
+                    </div>
+                    <div class="flex items-center gap-x-2 lg:gap-x-4">
+                        <img src="../public/img/instagram-grey.svg" class="w-3 lg:w-5" alt="instagram-grey">
+                        <h4 class="font-inter text-[10px] text-text"><a href="https://www.instagram.com/rafialexandro/" target="_blank">rafialexandro</a> | <a href="https://www.instagram.com/ui.andro/" target="_blank">ui.andro</a></h4>
+                    </div>
+                    <div class="flex items-center gap-x-2 lg:gap-x-4">
+                        <img src="../public/img/linkedin-grey.svg" class="w-3 lg:w-5" alt="linkedin-grey">
+                        <h4 class="font-inter text-[10px] text-text"><a href="https://www.linkedin.com/in/muhammad-rafi-alexandro/" target="_blank">Muhammad Rafi Alexandro</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-bgcopyright">
+            <div class="py-2 md:py-3 lg:py-4 lg:mx-40 text-text flex justify-center items-center gap-x-2">
+                <img src="../public/img/copyright.svg" class="w-3 lg:w-5" alt="copyright">
+                <p class="font-poppins text-[10px] lg:text-xs">Copyright by Muhammad Rafi Alexandro</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Flowbite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- JQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="../src/index.js"></script>
+
+</body>
+</html>
+
+

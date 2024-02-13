@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-white;
+}
+
+.navbar-fixed {
+    @apply fixed z-[999] border-b-[0.2px] border-slate-300 bg-white;    
+}
