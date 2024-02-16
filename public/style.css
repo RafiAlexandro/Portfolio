@@ -2504,6 +2504,38 @@ body {
     left: 2rem;
   }
 
+  .lg\:right-4 {
+    right: 1rem;
+  }
+
+  .lg\:right-8 {
+    right: 2rem;
+  }
+
+  .lg\:right-12 {
+    right: 3rem;
+  }
+
+  .lg\:right-20 {
+    right: 5rem;
+  }
+
+  .lg\:right-28 {
+    right: 7rem;
+  }
+
+  .lg\:right-32 {
+    right: 8rem;
+  }
+
+  .lg\:right-\[120px\] {
+    right: 120px;
+  }
+
+  .lg\:right-\[124px\] {
+    right: 124px;
+  }
+
   .lg\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
