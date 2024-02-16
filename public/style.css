@@ -1850,8 +1850,8 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
-.pl-28 {
-  padding-left: 7rem;
+.pl-24 {
+  padding-left: 6rem;
 }
 
 .pr-16 {
@@ -1880,10 +1880,6 @@ input:checked + .toggle-bg {
 
 .pt-\[50px\] {
   padding-top: 50px;
-}
-
-.pl-24 {
-  padding-left: 6rem;
 }
 
 .text-center {
