@@ -1842,11 +1842,6 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
 .pb-20 {
   padding-bottom: 5rem;
 }
